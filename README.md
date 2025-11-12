@@ -64,6 +64,6 @@ finger_tracker_pytorch.py:    Main script with OpenCV tracking, drawing, and pre
 
 train_svhn_model.py: Script for loading SVHN data, defining, and training the CNN.
 
-train_svhn_model.pth: Trained PyTorch model weights (the checkpoint file).
+svhn_digit_model_max_capacity.pth: Trained PyTorch model weights (the checkpoint file).
 
 requirements.txt: List of required dependencies.

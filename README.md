@@ -62,9 +62,9 @@ Start the real-time finger tracking and classification application:
 
 finger_tracker_main.py:    Main script with OpenCV tracking, drawing, and prediction logic.
 
-model_trainer_svhn.py: Script for loading SVHN data, defining, and training the CNN.
+train_svhn_model.py: Script for loading SVHN data, defining, and training the CNN.
 
-svhn_cnn_model.pth: Trained PyTorch model weights (the checkpoint file).
+train_svhn_model.pth: Trained PyTorch model weights (the checkpoint file).
 
 utils/cnn_architecture.py: Defines the PyTorch CNN class.
 

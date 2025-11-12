@@ -32,3 +32,42 @@ You need Python 3.x and the following libraries. The PyTorch installation requir
     pip freeze > requirements.txt
 
 # 🚀 Getting Started
+1. PyTorch Model Setup
+
+The system requires a trained PyTorch model.
+
+Training: Run the training script to generate the model checkpoint:
+
+    python3 model_trainer_svhn.py
+
+Placement: Ensure your final trained model file (e.g., svhn_cnn_model.pth) is located in the root directory. The main tracker script will attempt to load this model.
+
+2. Run the Main Application
+
+Start the real-time finger tracking and classification application:
+
+    python finger_tracker_main.py
+
+3. Usage Instructions
+
+       Start: The camera window will open and begin tracking the designated color/marker.
+
+       Press 'S': Save and Classify. This captures the drawn path, runs it through the PyTorch model, and displays the prediction.
+
+       Press 'C': Clear. Clears the drawn path from the current frame.
+
+       Press 'Q': Quit. Closes the application windows.
+
+# Project Structure
+
+finger_tracker_main.py:    Main script with OpenCV tracking, drawing, and prediction logic.
+
+model_trainer_svhn.py: Script for loading SVHN data, defining, and training the CNN.
+
+svhn_cnn_model.pth: Trained PyTorch model weights (the checkpoint file).
+
+utils/cnn_architecture.py: Defines the PyTorch CNN class.
+
+README.md: This documentation file.
+
+requirements.txt: List of required dependencies.
